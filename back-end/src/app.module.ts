@@ -8,10 +8,10 @@ import { Book } from './book/entities/book.entity';
 @Module({
   imports: [TypeOrmModule.forRoot({
       type:'mysql',
-      database:'db_teste_edify',
+      database:'BancoDeDados',
       port:3306,
       username:'root',
-      password:'Cav@lcanti32',
+      password:'SenhaBancoDeDados',
       entities:[Book],
       synchronize:true,
     }),BookModule],
